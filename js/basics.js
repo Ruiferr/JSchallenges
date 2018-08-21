@@ -24,7 +24,6 @@ function getTime(){
 
 }
 
-*/
 
 // 2. Write a JavaScript program to print the contents of the current window.
 
@@ -36,6 +35,26 @@ function printContent(){
 }
 
 
+
+*/
+
+// 3. Write a JavaScript program to get the current date.
+// Output : 
+// mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+
+dateFormat()
+
+function dateFormat(){
+
+	var d = new Date();
+	var month = d.getMonth();
+	var day = d.getDate();
+	var year = d.getFullYear();
+
+	document.getElementById("content").innerHTML = day+"-"+month+"-"+year +", "+day+"/"+month+"/"+year;
+
+}
 
 
 
