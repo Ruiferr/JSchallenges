@@ -43,7 +43,7 @@ function printContent(){
 // mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 
 
-dateFormat()
+dateFormat();
 
 function dateFormat(){
 
@@ -56,13 +56,13 @@ function dateFormat(){
 
 }
 
-*/
+
 
 //4. Write a JavaScript program to find the area of a triangle 
 //   where lengths of the three of its sides are 5, 6, 7.  
 
 
-triangleArea()
+triangleArea();
 
 function triangleArea(){
 
@@ -74,6 +74,28 @@ function triangleArea(){
 	var area = Math.sqrt(p*(p-side1)*(p-side2)*(p-side3));
 
 	document.getElementById("content").innerHTML = "The area of the triangle is: "+ area;
+}
+
+
+*/
+
+// 5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically 
+//    removing one letter from the end of the string and attaching it to the front.
+
+
+stringInverse();
+
+
+function stringInverse(){
+
+	var string = prompt("Insert a string", "w3resource");
+	var inverseString = " ";
+
+	for ( var i = string.length-1; i >= 0; i--){
+		inverseString += string[i];
+	}
+	document.getElementById("content").innerHTML = "Inversed String: "+ inverseString;
+
 }
 
 
