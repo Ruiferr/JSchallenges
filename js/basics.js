@@ -1,3 +1,4 @@
+/*
 // 1. Write a JavaScript program to display the current day and time in the following format.
 // Output : 
 // Today is : Tuesday. 
@@ -22,6 +23,19 @@ function getTime(){
 												   "<br> Current time is : " + hour +" : "+ minutes +": "+ seconds+"";
 
 }
+
+*/
+
+// 2. Write a JavaScript program to print the contents of the current window.
+
+
+printContent();
+
+function printContent(){
+	window.print();
+}
+
+
 
 
 
