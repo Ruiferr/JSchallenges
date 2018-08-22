@@ -98,7 +98,7 @@ function stringInverse(){
 
 }
 
-*/
+
 
 //6. Write a JavaScript program to determine whether a given year is a 
 //   leap year in the Gregorian calendar. 
@@ -113,6 +113,22 @@ function leapYear(){
 }
 
 
+*/
+
+
+// 7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
+
+sundaySearch();
+
+function sundaySearch(){
+
+	for (var year = 2014; year <= 2050; year++) {
+			var date = new Date(year, 0, 1);
+			var weekday = date.getDay();
+			weekday == 0 ? console.log(year + " starts with a Sunday on 1st Jan") : null;
+	}
+
+} 
 
 
 
