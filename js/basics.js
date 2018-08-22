@@ -130,7 +130,6 @@ function sundaySearch(){
 } 
 
 
-*/
 
 
 // 8. Write a JavaScript program where the program takes a random integer 
@@ -155,6 +154,25 @@ function randomInteger(){
 
 }
 
+
+*/
+
+// 9. Write a JavaScript program to calculate days left until next Christmas.
+
+christmas();
+
+function christmas(){
+
+	var today = new Date();
+	var year = today.getFullYear();
+
+	var christmas = new Date(year, 31, 11);
+	var daysUntilChristmas = Math.floor((christmas.getTime() - today.getTime()) / (24*60*60*1000));
+	
+
+	document.getElementById("content").innerHTML = daysUntilChristmas + " DAYS UNTIL CHRISTAMS";
+
+}
 
 
 
