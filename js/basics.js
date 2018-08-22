@@ -175,7 +175,7 @@ function christmas(){
 }
 
 
-*/
+
 
 
 // 10. Write a JavaScript program to calculate multiplication and division 
@@ -191,6 +191,8 @@ function calculate(operation){
 	
 
 }
+
+*/
 
 
 
