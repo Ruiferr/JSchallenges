@@ -113,7 +113,6 @@ function leapYear(){
 }
 
 
-*/
 
 
 // 7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
@@ -129,6 +128,32 @@ function sundaySearch(){
 	}
 
 } 
+
+
+*/
+
+
+// 8. Write a JavaScript program where the program takes a random integer 
+//	  between 1 to 10, the user is then prompted to input a guess number. 
+//	  If the user input matches with guess number, the program will display a 
+//	  message "Good Work" otherwise display a message "Not matched". 
+
+
+randomInteger();
+
+function randomInteger(){
+
+	var randomNum = Math.floor((Math.random() * 10));
+	var input = prompt("Insert an integer from 0 to 10:", "4");
+
+	while(!(input >= 0 && input <= 10 )){
+		input = prompt("Insert an integer from 0 to 10:", "4");
+	}
+
+	input == randomNum ? console.log("Epic win!\ your number: "+input + " generated number: " + randomNum) : console.log("Sorry try agin!\ your number: "+input + " generated number: " +randomNum);
+
+
+}
 
 
 
