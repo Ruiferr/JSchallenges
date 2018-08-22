@@ -155,7 +155,7 @@ function randomInteger(){
 }
 
 
-*/
+
 
 // 9. Write a JavaScript program to calculate days left until next Christmas.
 
@@ -173,6 +173,54 @@ function christmas(){
 	document.getElementById("content").innerHTML = daysUntilChristmas + " DAYS UNTIL CHRISTAMS";
 
 }
+
+
+*/
+
+
+// 10. Write a JavaScript program to calculate multiplication and division 
+//     of two numbers (input from user).
+
+
+function calculate(operation){
+
+	var num1 = parseInt(document.getElementsByTagName("input")[0].value);
+	var num2 = parseInt(document.getElementsByTagName("input")[1].value);
+
+	operation == "multiply" ? console.log(num1 * num2) : console.log(num1 / num2);
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
