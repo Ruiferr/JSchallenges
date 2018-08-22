@@ -77,7 +77,7 @@ function triangleArea(){
 }
 
 
-*/
+
 
 // 5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically 
 //    removing one letter from the end of the string and attaching it to the front.
@@ -98,6 +98,19 @@ function stringInverse(){
 
 }
 
+*/
+
+//6. Write a JavaScript program to determine whether a given year is a 
+//   leap year in the Gregorian calendar. 
+
+
+leapYear();
+
+function leapYear(){
+	var year = prompt("Insert a year", "1996");
+
+	year%4 == 0 ? console.log("YES! LEAP YEAR") : console.log("SORRY THAT'S NOT A LEAP YEAR");
+}
 
 
 
