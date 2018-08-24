@@ -192,7 +192,7 @@ function calculate(operation){
 
 }
 
-*/
+
 
 
 // 11. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
@@ -207,15 +207,23 @@ function temperatureConvert(){
 	var number = document.getElementById("val").value;
 	var unit = document.getElementById("unit").value;
 	var answer = document.getElementById("temperatureConverted");
-	
+
 	unit == "celcius" ? answer.innerHTML = (number/5*9)+32 + " Fahrenheit"  : answer.innerHTML = ((number-32)/9)*5 + " Celcius";
 }
 
 
+*/
 
 
+// 12. Write a JavaScript program to get the website URL (loading page).
 
 
+getURL();
+
+function getURL(){
+	console.log(document.URL);
+	return document.URL;
+}
 
 
 
