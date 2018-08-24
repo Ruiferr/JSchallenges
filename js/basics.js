@@ -212,7 +212,7 @@ function temperatureConvert(){
 }
 
 
-*/
+
 
 
 // 12. Write a JavaScript program to get the website URL (loading page).
@@ -225,7 +225,22 @@ function getURL(){
 	return document.URL;
 }
 
+*/
 
+// 13. Write a JavaScript exercise to create a variable using a user-defined name.
+
+
+variable();
+
+
+function variable(){
+
+	var name = prompt("Insert your name:", "John");
+	var number = Math.floor(Math.random()*10);
+
+	this[name] = number;
+	console.log("Your name: "+ name + "\n"+ "Generated number: " + this[name]);
+}
 
 
 
