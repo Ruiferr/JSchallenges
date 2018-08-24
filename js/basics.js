@@ -253,7 +253,7 @@ function extension(filename){
 	console.log(filename.split(".").pop());
 }
 
-*/
+
 
 
 // 15. Write a JavaScript program to get the difference between a given number and 13, 
@@ -272,6 +272,26 @@ function diference(number){
 
 
 }
+
+*/
+
+
+// 16. Write a JavaScript program to compute the sum 
+//     of the two given integers. If the two values are same, then returns triple their sum. 
+
+
+
+sum();
+
+function sum(){
+
+	var num1 = parseFloat(prompt("Insert the first value:", "15"));
+	var num2 = parseFloat(prompt("Insert the second value:", "7"));
+
+	num1 == num2 ? console.log("Result: " + (num1+num2)*3) : console.log("Result: " + (num1+num2));
+
+}
+
 
 
 
