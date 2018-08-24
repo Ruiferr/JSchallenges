@@ -242,7 +242,6 @@ function variable(){
 	console.log("Your name: "+ name + "\n"+ "Generated number: " + this[name]);
 }
 
-*/
 
 
 // 14. Write a JavaScript exercise to get the extension of a filename.
@@ -254,8 +253,25 @@ function extension(filename){
 	console.log(filename.split(".").pop());
 }
 
+*/
 
 
+// 15. Write a JavaScript program to get the difference between a given number and 13, 
+//     if the number is greater than 13 return double the absolute difference.
+
+
+diference(13);
+
+
+function diference(number){
+
+	var main = parseFloat(number);
+	var userVal = parseFloat(prompt("Insert value:", "16"));
+
+	userVal >= main ? console.log("Result: "+ Math.abs(userVal-main)*2) : console.log(main - userVal); 
+
+
+}
 
 
 
