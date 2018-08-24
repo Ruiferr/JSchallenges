@@ -225,7 +225,7 @@ function getURL(){
 	return document.URL;
 }
 
-*/
+
 
 // 13. Write a JavaScript exercise to create a variable using a user-defined name.
 
@@ -241,6 +241,54 @@ function variable(){
 	this[name] = number;
 	console.log("Your name: "+ name + "\n"+ "Generated number: " + this[name]);
 }
+
+*/
+
+
+// 14. Write a JavaScript exercise to get the extension of a filename.
+
+extension("exercice.php");
+
+function extension(filename){
+
+	console.log(filename.split(".").pop());
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
