@@ -195,9 +195,21 @@ function calculate(operation){
 */
 
 
+// 11. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+// [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ] 
+// Expected Output : 
+// 60°C is 140 °F
+// 45°F is 7.222222222222222°C 
 
 
+function temperatureConvert(){
 
+	var number = document.getElementById("val").value;
+	var unit = document.getElementById("unit").value;
+	var answer = document.getElementById("temperatureConverted");
+	
+	unit == "celcius" ? answer.innerHTML = (number/5*9)+32 + " Fahrenheit"  : answer.innerHTML = ((number-32)/9)*5 + " Celcius";
+}
 
 
 
