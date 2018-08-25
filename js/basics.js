@@ -312,7 +312,6 @@ function diference(){
 }
 
 
-*/
 
 // 18. Write a JavaScript program to check two given numbers and return true 
 //     if one of the number is 50 or if their sum is 50. 
@@ -336,12 +335,30 @@ function fifthy(){
 		return false;
 	}
 
-
 }
 
+*/
 
 
+// 19. Write a JavaScript program to check a given integer is within 20 of 100 or 400.
 
+
+checkInteger();
+
+
+function checkInteger(){
+
+	var num = prompt("Insert number", "170");
+
+	if ((Math.abs(100 - num) <= 20) ||
+	 (Math.abs(400 - num) <= 20)) {
+		console.log("True");
+	}else{
+		console.log("False");
+	}
+
+
+}
 
 
 
