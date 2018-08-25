@@ -292,7 +292,6 @@ function sum(){
 }
 
 
-*/
 
 // 17. Write a JavaScript program to compute the absolute difference between a specified 
 // number and 19. Returns triple their absolute difference if the specified number is greater than 19
@@ -313,12 +312,32 @@ function diference(){
 }
 
 
+*/
+
+// 18. Write a JavaScript program to check two given numbers and return true 
+//     if one of the number is 50 or if their sum is 50. 
 
 
 
+fifthy();
 
 
+function fifthy(){
 
+	var num1 = parseFloat(prompt("Insert numer:", "25"));
+	var num2 = parseFloat(prompt("Insert numer:", "17"));
+
+	if (num1 == 50 || num2 == 50 || num1+num2 == 50) {
+		console.log("True");
+		return true;
+	}else{
+		console.log("False");
+
+		return false;
+	}
+
+
+}
 
 
 
