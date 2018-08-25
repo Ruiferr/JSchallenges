@@ -273,7 +273,6 @@ function diference(number){
 
 }
 
-*/
 
 
 // 16. Write a JavaScript program to compute the sum 
@@ -293,13 +292,25 @@ function sum(){
 }
 
 
+*/
+
+// 17. Write a JavaScript program to compute the absolute difference between a specified 
+// number and 19. Returns triple their absolute difference if the specified number is greater than 19
 
 
 
+diference();
 
 
+function diference(){
+
+	var inputNum = parseFloat(prompt("Insert your number", "17"));
+	var diference = inputNum - 19;
+
+	inputNum > 19 ? console.log("Your number is higher than 19\nResult: "+ diference*3) : console.log("Your number is lower than 19\nResult: " + diference);
 
 
+}
 
 
 
