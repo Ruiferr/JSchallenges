@@ -337,7 +337,7 @@ function fifthy(){
 
 }
 
-*/
+
 
 
 // 19. Write a JavaScript program to check a given integer is within 20 of 100 or 400.
@@ -360,9 +360,21 @@ function checkInteger(){
 
 }
 
+*/
+
+// 20. Write a JavaScript program to check from two given integers, 
+//     if one is positive and one is negative. 
 
 
 
+function bipolar(x,y){
+
+	return x * y < 0 ?  true : false;
+
+}
+
+
+console.log(bipolar(20,-15));
 
 
 
