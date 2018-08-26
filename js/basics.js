@@ -493,7 +493,7 @@ function stringChange(){
 }
 
 
-*/
+
 
 
 // 27. Write a JavaScript program to check if a string starts with 'Java' and false otherwise.
@@ -507,6 +507,46 @@ function javaString(){
 
 	 return str.substring(0,4) == "java" ? true : false;
 }
+
+
+*/
+
+
+// 28. Write a JavaScript program to check if two given integer values are 
+//     in the range 50..99 (inclusive). Return true if either of them are in the said range.
+
+
+console.log(range());
+
+function range(){
+
+	var integer = parseInt(prompt("Insert integer:", "15"));
+
+	return (integer > 50 && integer < 99) ? true : false;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
