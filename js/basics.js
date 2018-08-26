@@ -527,7 +527,7 @@ function range(){
 }
 
 
-*/
+
 
 
 // 29. Write a JavaScript program to check if two given integer values are 
@@ -547,6 +547,24 @@ function range(){
 }
 
 
+*/
+
+
+// 30. Write a JavaScript program to check if a string "Script" 
+//     presents at 5th (index 4) position in a given string, if "Script" presents 
+//	   in the string return the string without "Script" otherwise return the original one. 
+
+
+console.log(script());
+
+function script(){
+
+	var str = prompt("Insert string", "stringexample");
+	return str.substring(4,10) == "Script" ? str.replace('Script', '') : str;
+
+
+
+}
 
 
 
