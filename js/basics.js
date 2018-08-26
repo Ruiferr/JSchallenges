@@ -404,7 +404,6 @@ function randomString(){
 }
 
 
-*/
 
 // 22. Write a JavaScript program to remove a character at the specified position 
 // of a given string and return the new string.
@@ -418,12 +417,27 @@ function removeChar(){
 	var str = prompt("Insert string", "dslahfk");
 	var replacedChar = str.charAt(Math.floor(Math.random()*(str.length-1)));
 	var finalStr = str.replace(replacedChar, '');
-	
+
 
 	console.log("Original string: "+ str +"\nRemoved character: "+ replacedChar + "\nFinal string: "+ finalStr);
 }
 
+*/
 
+// 23. Write a JavaScript program to create a new string from a given string changing the 
+// position of first and last characters. The string length must be greater than or equal to 1.
+
+
+stringChange();
+
+function stringChange(){
+
+	var str = prompt("Insert string", "hello!");
+	var finalStr = str.charAt(str.length-1)+ str.substring(1,(str.length-1))+str.charAt(0);
+
+	console.log("Initial string: " + str + "\nFinal string: "+ finalStr);
+
+}
 
 
 
