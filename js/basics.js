@@ -476,7 +476,6 @@ function multiple(x){
 }
 
 
-*/
 // 26. Write a JavaScript program to create a new string from a given string taking the last 3 
 //     characters and added at both the front and back. The string length must be 3 or more.
 
@@ -487,16 +486,27 @@ stringChange();
 function stringChange(){
 
 	var str = prompt("Insert string", "hello!");
-	var finalStr = str.substring(str.length-3,str.length)+ str +str.substring(str.length-3,str.length);
+	var finalStr = str.substring(str.length-3,str.length-1)+ str +str.substring(str.length-3,str.length);
 
 	console.log("Initial string: " + str + "\nFinal string: "+ finalStr);
 
 }
 
 
+*/
 
 
+// 27. Write a JavaScript program to check if a string starts with 'Java' and false otherwise.
 
+
+console.log(javaString());
+
+
+function javaString(){
+	 var str = prompt("Insert string", "hello");
+
+	 return str.substring(0,4) == "java" ? true : false;
+}
 
 
 
