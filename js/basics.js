@@ -439,7 +439,7 @@ function stringChange(){
 
 }
 
-*/
+
 
 // 24. Write a JavaScript program to create a new string from a given string 
 //     with the first character of the given string added at the front and back.
@@ -457,9 +457,23 @@ function stringChange(){
 
 }
 
+*/
 
 
+// 25. Write a JavaScript program check if a given positive number is a 
+//     multiple of 3 or a multiple of 7.
 
+
+console.log(multiple(435));
+
+
+function multiple(x){
+
+
+	return (x % 3 == 0 || x % 7 == 0) ? true : false;
+
+
+}
 
 
 
