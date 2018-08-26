@@ -509,10 +509,9 @@ function javaString(){
 }
 
 
-*/
 
 
-// 28. Write a JavaScript program to check if two given integer values are 
+// 28. Write a JavaScript program to check if one given integer values are 
 //     in the range 50..99 (inclusive). Return true if either of them are in the said range.
 
 
@@ -522,16 +521,30 @@ function range(){
 
 	var integer = parseInt(prompt("Insert integer:", "15"));
 
-	return (integer > 50 && integer < 99) ? true : false;
+	return (integer >= 50 && integer <= 99) ? true : false;
 
 
 }
 
 
+*/
 
 
+// 29. Write a JavaScript program to check if two given integer values are 
+//     in the range 50..99 (inclusive). Return true if either of them are in the said range.
 
 
+console.log(range());
+
+function range(){
+
+	var integer = parseInt(prompt("Insert integer:", "15"));
+	var integer2 = parseInt(prompt("Insert integer:", "40"));
+
+	return (integer >= 50 && integer <= 99 || integer2 >= 50 && integer2 <= 99) ? true : false;
+
+
+}
 
 
 
