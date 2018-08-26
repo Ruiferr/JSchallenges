@@ -422,7 +422,7 @@ function removeChar(){
 	console.log("Original string: "+ str +"\nRemoved character: "+ replacedChar + "\nFinal string: "+ finalStr);
 }
 
-*/
+
 
 // 23. Write a JavaScript program to create a new string from a given string changing the 
 // position of first and last characters. The string length must be greater than or equal to 1.
@@ -439,11 +439,23 @@ function stringChange(){
 
 }
 
+*/
+
+// 24. Write a JavaScript program to create a new string from a given string 
+//     with the first character of the given string added at the front and back.
 
 
 
+stringChange();
 
+function stringChange(){
 
+	var str = prompt("Insert string", "hello!");
+	var finalStr = str.charAt(0)+ str +str.charAt(0);
+
+	console.log("Initial string: " + str + "\nFinal string: "+ finalStr);
+
+}
 
 
 
