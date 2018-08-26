@@ -377,7 +377,6 @@ function bipolar(x,y){
 
 console.log(bipolar(20,-15));
 
-*/
 
 // 21. Write a JavaScript program to create a new string adding 
 //     "Py" in front of a given string. If the given string begins with "Py" 
@@ -402,16 +401,27 @@ function randomString(){
 
 	str.substring(0,2) == "Py" ? console.log(str) : console.log("Py"+str);
 
-
-
-
 }
 
 
+*/
+
+// 22. Write a JavaScript program to remove a character at the specified position 
+// of a given string and return the new string.
 
 
+removeChar();
 
 
+function removeChar(){
+
+	var str = prompt("Insert string", "dslahfk");
+	var replacedChar = str.charAt(Math.floor(Math.random()*(str.length-1)));
+	var finalStr = str.replace(replacedChar, '');
+	
+
+	console.log("Original string: "+ str +"\nRemoved character: "+ replacedChar + "\nFinal string: "+ finalStr);
+}
 
 
 
