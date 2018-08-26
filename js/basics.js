@@ -360,30 +360,52 @@ function checkInteger(){
 
 }
 
-*/
+
 
 // 20. Write a JavaScript program to check from two given integers, 
 //     if one is positive and one is negative. 
 
 
 
+
 function bipolar(x,y){
 
-	return x * y < 0 ?  true : false;
+	return x * y < 0 ?  true : false; 
 
 }
 
 
 console.log(bipolar(20,-15));
 
+*/
+
+// 21. Write a JavaScript program to create a new string adding 
+//     "Py" in front of a given string. If the given string begins with "Py" 
+//     then return the original string.
 
 
 
 
 
+randomString();
+
+
+function randomString(){
+
+	var letters = "ABCDEFGHIJKLMNOPQRSTUVXZabcdefghijklmnopqrstuvxz";
+	var str = "";
+
+	for( var i = 0; i <= 7; i++ ){
+		str += letters.charAt(Math.floor(Math.random()*(letters.length-1)));
+	}
+
+
+	str.substring(0,2) == "Py" ? console.log(str) : console.log("Py"+str);
 
 
 
+
+}
 
 
 
