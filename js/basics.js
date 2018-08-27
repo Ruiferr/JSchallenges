@@ -621,7 +621,7 @@ function inRange(x,y){
 
 }
 
-*/
+
 
 //  34. Write a JavaScript program to find the larger number from the two given 
 //      positive integers, the two numbers are in the range 40..60 inclusive.
@@ -642,6 +642,47 @@ function larger(x,y){
 	return (x >= 40 && x <= 60 && y >= 40 && y <= 60) ?  max_val : "Numbers not in 40 - 60 range"; 
 
 }
+
+*/
+
+
+// 35. Write a JavaScript program to check a given string contains 2 to 4 numbers. 
+
+
+console.log(stringNumbers());
+
+
+function stringNumbers(){
+
+	var str = prompt("Insert any string: ", "djsl345jkn6");
+	var numbers = "0123456789";
+	var strNumbers = '';
+
+	for ( var i = 0; i < str.length; i++){
+		for ( var j = 0; j < numbers.length; j++){
+			str.charAt(i) == numbers.charAt(j) ? strNumbers++ : null;
+		}
+		
+	}
+
+	return strNumbers >= 2 && strNumbers <= 4 ? true : false;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
