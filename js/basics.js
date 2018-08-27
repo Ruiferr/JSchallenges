@@ -547,7 +547,7 @@ function range(){
 }
 
 
-*/
+
 
 
 // 30. Write a JavaScript program to check if a string "Script" 
@@ -567,10 +567,25 @@ function script(){
 }
 
 
+*/
 
 
+// 31. Write a JavaScript program to find the largest of three given integers.
 
 
+console.log(largest());
+
+function largest(){
+
+	var num1 = parseFloat(prompt("Insert first number: ", "234"));
+	var num2 = parseFloat(prompt("Insert second number: ", "234"));
+	var num3 = parseFloat(prompt("Insert third number: ", "234"));
+
+	list = [num1, num2, num3];
+
+	return list.sort().pop();
+
+}
 
 
 
