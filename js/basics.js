@@ -587,7 +587,7 @@ function largest(){
 
 }
 
-*/
+
 
 
 // 32. Write a JavaScript program to find a value which is nearest to 
@@ -605,9 +605,25 @@ function nearest(){
 
 }
 
+*/
+
+
+// 33. Write a JavaScript program to check if two numbers are both in range 40..60 or in 
+//     the range 70..100 inclusive.
+
+var num1 = parseFloat(prompt("Insert first number: ", "234"));
+var num2 = parseFloat(prompt("Insert second number: ", "234"));
+console.log(inRange(num1,num2));
+
+function inRange(x,y){
+
+	return (x >= 40 && x <= 60 || x >= 70 && x <= 100) && (y >= 40 && y <= 60 || y >= 70 && y <= 100) ? true : false;
 
 
 
+
+
+}
 
 
 
