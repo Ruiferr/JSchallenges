@@ -567,7 +567,7 @@ function script(){
 }
 
 
-*/
+
 
 
 // 31. Write a JavaScript program to find the largest of three given integers.
@@ -587,7 +587,23 @@ function largest(){
 
 }
 
+*/
 
+
+// 32. Write a JavaScript program to find a value which is nearest to 
+//     100 from two different given integer values. 
+
+console.log(nearest());
+
+
+function nearest(){
+
+	var num1 = parseFloat(prompt("Insert first number: ", "234"));
+	var num2 = parseFloat(prompt("Insert second number: ", "234"));
+
+	return Math.abs(100-num1) > Math.abs(100-num2) ? "The closest number to 100 is: "+ num2 : "The closest number to 100 is: "+ num1;
+
+}
 
 
 
