@@ -605,7 +605,7 @@ function nearest(){
 
 }
 
-*/
+
 
 
 // 33. Write a JavaScript program to check if two numbers are both in range 40..60 or in 
@@ -619,11 +619,44 @@ function inRange(x,y){
 
 	return (x >= 40 && x <= 60 || x >= 70 && x <= 100) && (y >= 40 && y <= 60 || y >= 70 && y <= 100) ? true : false;
 
+}
+
+*/
+
+//  34. Write a JavaScript program to find the larger number from the two given 
+//      positive integers, the two numbers are in the range 40..60 inclusive.
 
 
 
+var num1 = parseFloat(prompt("Insert first number: ", "234"));
+var num2 = parseFloat(prompt("Insert second number: ", "234"));
+
+console.log(larger(num1,num2));
+
+function larger(x,y){
+
+	max_val = 0;
+
+	num1 > num2 ? max_val = num1 : max_val = num2;
+
+	return (x >= 40 && x <= 60 && y >= 40 && y <= 60) ?  max_val : "Numbers not in 40 - 60 range"; 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
