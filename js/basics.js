@@ -723,7 +723,6 @@ function grade(marks, final){
 }
 
 
-*/
 
 
 // 39. Write a JavaScript program to compute the sum of the two given integers, 
@@ -739,7 +738,22 @@ function sum(){
 	return ((num1 + num2) > 50 && (num1 + num2) < 80)  ? "65" : "80";
 }
 
+*/
 
+// 40. Write a JavaScript program to check from two given integers if 
+//     either one is 8 or their sum or difference is 8. 
+
+
+var num1 = parseFloat(prompt("Insert number"));
+var num2 = parseFloat(prompt("Insert number"));
+
+console.log(isEight(num1, num2));
+
+function isEight(num1, num2){
+
+	return (num1 == 8 || num2 == 8 || (num1 + num2) == 8 || (num1 - num2) == 8) ? true : false;
+
+}
 
 
 
