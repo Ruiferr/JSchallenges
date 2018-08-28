@@ -705,7 +705,6 @@ function convertLowerCase(str){
 }
 
 
-*/
 
 
 //  38. Write a JavaScript program to check the total marks of a student in various examinations. 
@@ -720,6 +719,24 @@ console.log(grade(marks,final));
 function grade(marks, final){
 
 	return final ? marks > 90 : (marks >= 89 && marks <= 100);
+
+}
+
+
+*/
+
+
+// 39. Write a JavaScript program to compute the sum of the two given integers, 
+//     If the sum is in the range 50..80 return 65 other wise return 80. 
+
+
+var num1 = parseFloat(prompt("Insert number"));
+var num2 = parseFloat(prompt("Insert number"));
+console.log(sum(num1, num2));
+
+function sum(){
+
+	return ((num1 + num2) > 50 && (num1 + num2) < 80)  ? "65" : "80";
 }
 
 
