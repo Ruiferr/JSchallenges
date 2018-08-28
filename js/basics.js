@@ -689,7 +689,6 @@ function checkLastDigit(){
 	return (num1.split('').pop() == (num2.split('').pop() && num3.split('').pop())) ? true : false;
 }
 
-*/
 
 
 // 37. Write a JavaScript program to create new string with first 3 characters are in 
@@ -703,6 +702,24 @@ function convertLowerCase(str){
 
 	return str.length <= 3 ? str = str.toUpperCase() : str = str.substring(0,3).toLowerCase() + str.substring(3, str.length);
 
+}
+
+
+*/
+
+
+//  38. Write a JavaScript program to check the total marks of a student in various examinations. 
+//      The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the 
+//      examination is "Final-exam." the student will get A+ grade if the total marks must be greater than 
+//      or equal to 90. Return true if the student get A+ grade or false otherwise.
+
+var marks = parseFloat(prompt("Insert grade"));
+var final = confirm("Final Exam?");
+console.log(grade(marks,final));
+
+function grade(marks, final){
+
+	return final ? marks > 90 : (marks >= 89 && marks <= 100);
 }
 
 
