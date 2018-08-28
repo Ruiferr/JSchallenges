@@ -643,7 +643,7 @@ function larger(x,y){
 
 }
 
-*/
+
 
 
 // 35. Write a JavaScript program to check a given string contains 2 to 4 numbers. 
@@ -669,6 +669,25 @@ function stringNumbers(){
 
 }
 
+
+*/
+
+
+// 36. Write a JavaScript program to check if the last digit of the three given positive integers 
+//     is same. 
+
+
+console.log(checkLastDigit());
+
+
+function checkLastDigit(){
+
+	var num1 = prompt("Insert integer");
+	var num2 = prompt("Insert integer");
+	var num3 = prompt("Insert integer");
+
+	return (num1.split('').pop() == (num2.split('').pop() && num3.split('').pop())) ? true : false;
+}
 
 
 
