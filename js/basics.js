@@ -670,7 +670,7 @@ function stringNumbers(){
 }
 
 
-*/
+
 
 
 // 36. Write a JavaScript program to check if the last digit of the three given positive integers 
@@ -689,8 +689,21 @@ function checkLastDigit(){
 	return (num1.split('').pop() == (num2.split('').pop() && num3.split('').pop())) ? true : false;
 }
 
+*/
 
 
+// 37. Write a JavaScript program to create new string with first 3 characters are in 
+//	   lower case. If the string length is less than 3 convert all the characters in upper case. 
+
+var str = prompt("Insert string", "StRing Example");
+console.log(convertLowerCase(str));
+
+
+function convertLowerCase(str){
+
+	return str.length <= 3 ? str = str.toUpperCase() : str = str.substring(0,3).toLowerCase() + str.substring(3, str.length);
+
+}
 
 
 
