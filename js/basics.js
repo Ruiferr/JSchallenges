@@ -755,7 +755,7 @@ function isEight(num1, num2){
 
 }
 
-*/
+
 
 
 // 41. Write a JavaScript program to check three given numbers, if the three numbers are same 
@@ -780,7 +780,29 @@ function checkEqual(){
 
 } 
 
+*/
 
+// 42. Write a JavaScript program to check if three given numbers (integers) are increasing in 
+//     strict mode or in soft mode.  
+//     Note: Strict mode -> 10, 15, 31 : Soft mode -> 24, 22, 31 or 22, 22, 31
+
+var x = parseInt(prompt("Insert number"));
+var y = parseInt(prompt("Insert number"));
+var z = parseInt(prompt("Insert number"));
+
+console.log(increasing(x,y,z));
+
+function increasing(x,y,z){
+
+	if (x < y && y < z) {
+		return "Strict Mode";
+	}else if( z > x ){
+		return "Soft Mode";
+	}else{
+		return "Not increasing";
+	}
+
+}
 
 
 
