@@ -738,7 +738,7 @@ function sum(){
 	return ((num1 + num2) > 50 && (num1 + num2) < 80)  ? "65" : "80";
 }
 
-*/
+
 
 // 40. Write a JavaScript program to check from two given integers if 
 //     either one is 8 or their sum or difference is 8. 
@@ -754,6 +754,31 @@ function isEight(num1, num2){
 	return (num1 == 8 || num2 == 8 || (num1 + num2) == 8 || (num1 - num2) == 8) ? true : false;
 
 }
+
+*/
+
+
+// 41. Write a JavaScript program to check three given numbers, if the three numbers are same 
+//     return 30 otherwise return 40 and if two numbers are same return 20.
+
+var x = parseFloat(prompt("Insert number"));
+var y = parseFloat(prompt("Insert number"));
+var z = parseFloat(prompt("Insert number"));
+
+console.log(checkEqual(x,y,z));
+
+
+function checkEqual(){
+
+	if ( x == y && y == z) {
+		return 30;
+	} else if(x == y || y == z){
+		return 20;
+	}else{
+		return 40;
+	}
+
+} 
 
 
 
