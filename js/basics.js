@@ -780,7 +780,6 @@ function checkEqual(){
 
 } 
 
-*/
 
 // 42. Write a JavaScript program to check if three given numbers (integers) are increasing in 
 //     strict mode or in soft mode.  
@@ -804,7 +803,23 @@ function increasing(x,y,z){
 
 }
 
+*/
 
+// 43. Write a JavaScript program to check from three given numbers 
+// (non negative integers) that two or all of them have the same rightmost digit.
+
+
+var x = prompt("Insert number");
+var y = prompt("Insert number");
+var z = prompt("Insert number");
+console.log(checkRightDigit(x,y,z));
+
+
+function checkRightDigit(x,y,z){
+
+	return x.split('').pop() == y.split('').pop() && y.split('').pop() == z.split('').pop() ? true : false;
+
+}
 
 
 
