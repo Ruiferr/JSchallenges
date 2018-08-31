@@ -824,8 +824,6 @@ function checkRightDigit(x,y,z){
 
 
 
-*/
-
 // 44. Write a JavaScript program to check from three given integers that if a 
 //     number is greater than or equal to 20 and less than one of the others.
 
@@ -856,12 +854,27 @@ function checkInteger(num1,num2,num3){
 }
 
 
+*/
+
+
+// 45. Write a JavaScript program to check two given integer values and 
+//     return true if one of the number is 15 or if their sum or difference is 15.
 
 
 
 
 
+var x = parseInt(prompt("Insert number"));
+var y = parseInt(prompt("Insert number"));
+console.log(checkFifteen(x,y));
 
+
+
+function checkFifteen(num1,num2){
+
+	return (num1 == 15 || num2 == 15 || (num1 + num2 == 15) || (num1 - num2 == 15)) ? true : false;
+
+}
 
 
 
