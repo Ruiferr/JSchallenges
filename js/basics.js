@@ -854,7 +854,7 @@ function checkInteger(num1,num2,num3){
 }
 
 
-*/
+
 
 
 // 45. Write a JavaScript program to check two given integer values and 
@@ -877,8 +877,30 @@ function checkFifteen(num1,num2){
 }
 
 
+*/
 
 
+// 46. Write a JavaScript program to check two given non-negative integers and if one of 
+//     the number (not both) is multiple of 7 or 11.
+
+
+var x = parseInt(prompt("Insert number"));
+var y = parseInt(prompt("Insert number"));
+console.log(checkNumbers(x,y));
+
+
+
+
+function checkNumbers(x,y){
+
+	if ( x > 0 && y > 0) {
+
+		return (x%7 == 0 || x%11 == 0) && (y%7 != 0 && y%11 != 0) ? true : (y%7 == 0 || y%11 == 0) && (x%7 != 0 && x%11 != 0);
+
+	}else{
+		return "Negative numbers";
+	}
+}
 
 
 
