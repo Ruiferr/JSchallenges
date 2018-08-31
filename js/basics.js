@@ -803,7 +803,7 @@ function increasing(x,y,z){
 
 }
 
-*/
+
 
 // 43. Write a JavaScript program to check from three given numbers 
 // (non negative integers) that two or all of them have the same rightmost digit.
@@ -824,8 +824,36 @@ function checkRightDigit(x,y,z){
 
 
 
+*/
+
+// 44. Write a JavaScript program to check from three given integers that if a 
+//     number is greater than or equal to 20 and less than one of the others.
 
 
+
+
+
+var x = parseInt(prompt("Insert number"));
+var y = parseInt(prompt("Insert number"));
+var z = parseInt(prompt("Insert number"));
+console.log(checkInteger(x,y,z));
+
+
+function checkInteger(num1,num2,num3){
+
+	var list = [num1,num2,num3]
+
+	for ( var i = 0; i < list.length-1; i++){
+		console.log(list.sort(function(a, b){return a-b})[i]);
+		if((list.sort(function(a, b){return a-b})[i]) >= 20){
+			return true;
+		}
+	}
+
+	return false;
+	
+
+}
 
 
 
