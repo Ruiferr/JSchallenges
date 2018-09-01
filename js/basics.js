@@ -903,7 +903,7 @@ function checkNumbers(x,y){
 }
 
 
-*/
+
 
 // 47. Write a JavaScript program to check if a number in the range 40..10000 inclusive 
 //     presents in two number (in same range).
@@ -926,10 +926,32 @@ function checkNumbers(x,y){
 }
 
 
+*/
+
+
+//  48. Write a JavaScript program to reverse a given string. 
 
 
 
+var str = prompt("Insert a String");
+console.log(reverseString(str));
 
+
+function reverseString(str){
+
+	var revervedStr = "";
+
+
+	for ( var i = str.length-1; i >= 0; i--){     // Another possible solution:  return str.split("").reverse().join("");
+
+		revervedStr += str[i];
+
+	}
+
+	return "String: "+str+"\nReversed: "+ revervedStr;
+
+
+}
 
 
 
