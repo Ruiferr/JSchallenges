@@ -926,7 +926,7 @@ function checkNumbers(x,y){
 }
 
 
-*/
+
 
 
 //  48. Write a JavaScript program to reverse a given string. 
@@ -952,6 +952,72 @@ function reverseString(str){
 
 
 }
+
+
+
+
+*/
+
+// 49. Write a JavaScript program to replace every character in a given 
+//     string with the character following it in the alphabet. 
+
+
+
+var str = prompt("Insert a String");
+console.log(replaceChar(str));
+
+
+function replaceChar(str){
+
+	var alpha = "abcdefghijklmnopqrstuvxyza";
+		replacedStr = "";
+
+	for (var i= 0; i < str.length; i++) {
+		for ( var j = 0; j < alpha.length-1; j++){
+
+				if(str[i] == ' '){
+					replacedStr += ' ';
+					break;
+				}else if(str[i] == alpha[j]){
+					replacedStr += alpha[j+1];
+					break;
+				}
+			
+		}
+
+	}
+
+
+	return replacedStr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
