@@ -877,7 +877,7 @@ function checkFifteen(num1,num2){
 }
 
 
-*/
+
 
 
 // 46. Write a JavaScript program to check two given non-negative integers and if one of 
@@ -901,6 +901,45 @@ function checkNumbers(x,y){
 		return "Negative numbers";
 	}
 }
+
+
+*/
+
+// 47. Write a JavaScript program to check if a number in the range 40..10000 inclusive 
+//     presents in two number (in same range).
+
+
+
+var x = parseInt(prompt("Insert number"));
+var y = parseInt(prompt("Insert number"));
+console.log(checkNumbers(x,y));
+
+
+
+function checkNumbers(x,y){
+
+    var x_div = parseInt(x / 40),
+        x_mod = x % 40,
+        y_div = parseInt(y / 40),
+        y_mod = y % 40;
+    return x_div === y_div || x_mod === y_mod || x_div === y_mod || x_mod === y_div;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
