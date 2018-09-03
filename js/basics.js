@@ -956,8 +956,6 @@ function reverseString(str){
 
 
 
-*/
-
 // 49. Write a JavaScript program to replace every character in a given 
 //     string with the character following it in the alphabet. 
 
@@ -991,12 +989,27 @@ function replaceChar(str){
 	return replacedStr;
 }
 
+*/
+
+// 50. Write a JavaScript program to capitalize the first letter of each word of a given string. 
+
+
+var str = prompt("Insert a String");
+console.log(capitalizeStr(str));
 
 
 
+function capitalizeStr(str){
+
+	var strWords = str.split(' ');
 
 
+	for (var i = 0; i < strWords.length; i++) {
+		strWords[i] =+  strWords[i][0].toUpperCase() + strWords[i].substr(1);
+	}
 
+	return strWords.join(' ');
+}
 
 
 
