@@ -989,7 +989,7 @@ function replaceChar(str){
 	return replacedStr;
 }
 
-*/
+
 
 // 50. Write a JavaScript program to capitalize the first letter of each word of a given string. 
 
@@ -1013,9 +1013,23 @@ function capitalizeStr(str){
 
 
 
+*/
 
 
+//  51. Write a JavaScript program to convert a given number to hours and minutes. 
 
+var num = prompt("Insert number");
+console.log(convertTime(num));
+
+
+function convertTime(num){
+
+	var hours = Math.floor(num / 60);
+		minutes = Math.floor((num % 60));
+
+	return num < 0 ? 0 : "Hours: "+ hours +"\nMinutes: "+ minutes;
+
+}
 
 
 
