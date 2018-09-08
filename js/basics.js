@@ -1049,7 +1049,7 @@ function orderString(str){
 
 }
 
-*/
+
 
 
 // 53. Write a JavaScript program to check if the characters a and b are separated by exactly 
@@ -1077,9 +1077,19 @@ function charAB(str){
 }
 
 
+*/
 
 
+// 54. Write a JavaScript program to count the number of vowels in a given string.
 
+
+var str = prompt("Insert string");
+console.log(checkVowels(str));
+
+function checkVowels(){
+
+	return str.replace(/[^aeiou]/gi, "").length;
+}
 
 
 
