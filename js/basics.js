@@ -1033,7 +1033,7 @@ function convertTime(num){
 
 
 
-*/
+
 
 
 // 52. Write a JavaScript program to convert the letters of a given string in alphabetical order. 
@@ -1049,7 +1049,32 @@ function orderString(str){
 
 }
 
+*/
 
+
+// 53. Write a JavaScript program to check if the characters a and b are separated by exactly 
+//     3 places anywhere (at least once) in a given string.
+
+var str = prompt("Insert a string");
+charAB(str);
+
+
+function charAB(str){
+
+	var spaced = 0;
+	var trigger = false;
+
+	for( var i = 0; i < str.length; i++){
+
+		(str[i] == 'a' || str[i] == 'b') ? trigger = true : spaced++;
+
+		if ((str[i] == 'a' || str[i] == 'b') && trigger == true){
+			spaced == 3 ? console.log(true) : spaced = 0;
+		} 
+
+	}
+
+}
 
 
 
