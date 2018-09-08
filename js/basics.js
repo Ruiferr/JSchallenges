@@ -1108,7 +1108,6 @@ function ptCheck(){
 
 
 
-*/
 
 
 // 56. Write a JavaScript program to divide two positive numbers and return a string 
@@ -1129,6 +1128,66 @@ function division(num,div){
 
 
 }
+
+
+
+*/
+
+// 57. Write a JavaScript program to create a new string of specified copies (positive number) 
+//     of a given string. 
+
+
+
+var str = prompt("insert string: ");
+var num = prompt("Number of copies: ");
+console.log(copyStr(str,num));
+
+
+function copyStr(str,num){
+
+	newstr = str;
+
+	for (var i = 0; i <= num; i++) {
+		newstr += str;
+	}
+
+	return newstr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
