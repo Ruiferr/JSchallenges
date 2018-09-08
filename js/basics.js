@@ -1013,7 +1013,7 @@ function capitalizeStr(str){
 
 
 
-*/
+
 
 
 //  51. Write a JavaScript program to convert a given number to hours and minutes. 
@@ -1033,13 +1033,21 @@ function convertTime(num){
 
 
 
+*/
 
 
+// 52. Write a JavaScript program to convert the letters of a given string in alphabetical order. 
 
 
+var input = prompt("Insert string");
+console.log(orderString(input));
 
 
+function orderString(str){
 
+	return str.split('').sort().join('');
+
+}
 
 
 
