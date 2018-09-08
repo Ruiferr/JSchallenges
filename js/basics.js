@@ -1091,7 +1091,7 @@ function checkVowels(){
 	return str.replace(/[^aeiou]/gi, "").length;
 }
 
-*/
+
 
 
 // 55. Write a JavaScript program to check if a given string contains equal number of 
@@ -1108,10 +1108,27 @@ function ptCheck(){
 
 
 
+*/
 
 
+// 56. Write a JavaScript program to divide two positive numbers and return a string 
+//     with properly formatted commas. 
 
 
+var number = prompt("First number");
+var divided = prompt("Divided by");
+
+console.log(division(number,divided));
+
+
+function division(num,div){
+
+	var result = parseFloat(num/div).toFixed(2);
+
+	return result.toString().replace(".", ",");
+
+
+}
 
 
 
