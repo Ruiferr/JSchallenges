@@ -1077,7 +1077,7 @@ function charAB(str){
 }
 
 
-*/
+
 
 
 // 54. Write a JavaScript program to count the number of vowels in a given string.
@@ -1091,8 +1091,20 @@ function checkVowels(){
 	return str.replace(/[^aeiou]/gi, "").length;
 }
 
+*/
 
 
+// 55. Write a JavaScript program to check if a given string contains equal number of 
+//     p's and t's present.
+
+
+var str = prompt("Insert string");
+console.log(ptCheck(str));
+
+function ptCheck(){
+
+	return str.replace(/[^t]/gi, "").length == str.replace(/[^p]/gi, "").length ? true : false;
+}
 
 
 
