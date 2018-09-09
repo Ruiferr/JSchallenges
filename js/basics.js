@@ -1254,7 +1254,7 @@ function newStr(str){
 }
 
 
-*/
+
 
 
 // 63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. 
@@ -1271,8 +1271,27 @@ function newStr(str){
 
 }
 
+*/
+
+// 64. Write a JavaScript program to concatenate two strings and return the result. If the length of 
+//     the strings are not equal then remove the characters from the longer string.
 
 
+
+var str1 = prompt("Insert string");
+var str2 = prompt("Insert string");
+console.log(concatStr(str1, str2));
+
+
+function concatStr(str1, str2){
+
+	var len = Math.min(str1.length, str2.length);
+
+	return str1.slice(0, len) + str2.slice(0, len);
+
+
+
+}
 
 
 
