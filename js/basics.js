@@ -1293,7 +1293,7 @@ function concatStr(str1, str2){
 
 }
 
-*/
+
 
 
 //  65. Write a JavaScript program to test if a string end with "Script". 
@@ -1307,6 +1307,24 @@ console.log(testStr(str));
 function testStr(str){
 
 	return str.length < 6 ? "String length is too small, cannot proceed." : (/Script$/gi).test(str);
+
+}
+
+
+*/ 
+
+
+// 66. Write a JavaScript program to display the city name if the string 
+//     begins with "Los" or "New" otherwise return blank. 
+
+
+var str = prompt("Insert a city name: ");
+console.log(testStr(str));
+
+
+function testStr(str){
+
+	return (/^Los/gi.test(str) || /^New/gi.test(str)) ? str : '';
 
 }
 
