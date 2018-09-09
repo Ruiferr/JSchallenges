@@ -1199,7 +1199,7 @@ function halfStr(str){
 }
 
 
-*/
+
 
 
 // 60. Write a JavaScript program to create a new string without the first and 
@@ -1215,6 +1215,31 @@ function newStr(str){
 	return str.slice(1, str.length-1);
 
 }
+
+
+*/
+
+// 61. Write a JavaScript program to concatenate two strings except their first character. 
+
+
+
+var str1 = prompt("Insert first string");
+var str2 = prompt("Insert second string");
+console.log(newStr(str1, str2));
+
+
+
+function newStr(str1, str2){
+
+	return str1.slice(1, str1.length) + str2.slice(1, str2.length);
+
+
+}
+
+
+
+
+
 
 
 
