@@ -1309,9 +1309,7 @@ function testStr(str){
 	return str.length < 6 ? "String length is too small, cannot proceed." : (/Script$/gi).test(str);
 
 }
-
-
-*/ 
+ 
 
 
 // 66. Write a JavaScript program to display the city name if the string 
@@ -1327,6 +1325,29 @@ function testStr(str){
 	return (/^Los/gi.test(str) || /^New/gi.test(str)) ? str : '';
 
 }
+
+
+*/ 
+
+// 67. Write a JavaScript program to create a new string from a given string, removing the 
+//     first and last characters of the string if the first or last character are 'P'. 
+//      Return the original string if the condition is not satisfied. 
+
+
+var str = prompt("Insert a string: ");
+console.log(testStr(str));
+
+
+function testStr(str){
+
+	return /^p/gi.test(str) || /p$/gi.test(str) ? str.replace(/p/gi, '') : str;
+
+}
+
+
+
+
+
 
 
 
