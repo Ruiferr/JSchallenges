@@ -1237,7 +1237,6 @@ function newStr(str1, str2){
 }
 
 
-*/
 
 
 // 62. Write a JavaScript program to move last three character to the start of a given string. 
@@ -1250,11 +1249,27 @@ console.log(newStr(str));
 
 function newStr(str){
 
-	str.length < 3 ? console.log("String length is NOT long enough, cannot proceed.") : console.log("Loading...\n");
-	return str.slice(-3, str.length) + str.slice(0, str.length-3);
+	return str.length < 3 ? "String length is NOT long enough, cannot proceed." : str.slice(-3, str.length) + str.slice(0, str.length-3);
 
 }
 
+
+*/
+
+
+// 63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. 
+//     The string length must be greater or equal to three.
+
+
+var str = prompt("Insert string");
+console.log(newStr(str));
+
+
+function newStr(str){
+
+	return str.length % 2 == 0 ? "String length is NOT and odd number, cannot proceed." : str.slice(Math.floor(str.length/2)-1, Math.ceil(str.length/2)+1);
+
+}
 
 
 
