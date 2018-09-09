@@ -1327,7 +1327,6 @@ function testStr(str){
 }
 
 
-*/ 
 
 // 67. Write a JavaScript program to create a new string from a given string, removing the 
 //     first and last characters of the string if the first or last character are 'P'. 
@@ -1345,8 +1344,23 @@ function testStr(str){
 }
 
 
+*/
+
+// 68. Write a JavaScript program to create a new string using the first and last n characters from a given sting. 
+//     The string length must be greater or equal to n.
 
 
+
+var str = prompt("Insert a string: ");
+var num = prompt("Range number: ");
+console.log(newStr(str,num));
+
+
+function newStr(str, num){
+
+	return str.length >= num ? str.slice(0, num) + str.slice(-num, str.length) : "Error! Insert a longer string.";
+
+}
 
 
 
