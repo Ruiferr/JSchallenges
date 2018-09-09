@@ -1217,7 +1217,7 @@ function newStr(str){
 }
 
 
-*/
+
 
 // 61. Write a JavaScript program to concatenate two strings except their first character. 
 
@@ -1237,7 +1237,23 @@ function newStr(str1, str2){
 }
 
 
+*/
 
+
+// 62. Write a JavaScript program to move last three character to the start of a given string. 
+//     The string length must be greater or equal to three. 
+
+
+var str = prompt("Insert string");
+console.log(newStr(str));
+
+
+function newStr(str){
+
+	str.length < 3 ? console.log("String length is NOT long enough, cannot proceed.") : console.log("Loading...\n");
+	return str.slice(-3, str.length) + str.slice(0, str.length-3);
+
+}
 
 
 
