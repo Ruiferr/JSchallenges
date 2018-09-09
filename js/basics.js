@@ -1271,7 +1271,7 @@ function newStr(str){
 
 }
 
-*/
+
 
 // 64. Write a JavaScript program to concatenate two strings and return the result. If the length of 
 //     the strings are not equal then remove the characters from the longer string.
@@ -1293,9 +1293,22 @@ function concatStr(str1, str2){
 
 }
 
+*/
 
 
+//  65. Write a JavaScript program to test if a string end with "Script". 
+//      The string length must be greater or equal to 6.
 
+
+var str = prompt("Insert string");
+console.log(testStr(str));
+
+
+function testStr(str){
+
+	return str.length < 6 ? "String length is too small, cannot proceed." : (/Script$/gi).test(str);
+
+}
 
 
 
