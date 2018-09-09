@@ -1182,7 +1182,7 @@ function newStr(str){
 }
 
 
-*/
+
 
 
 // 59. Write a JavaScript program to extract the first half of a string of even length. 
@@ -1199,8 +1199,22 @@ function halfStr(str){
 }
 
 
+*/
 
 
+// 60. Write a JavaScript program to create a new string without the first and 
+//     last character of a given string. 
+
+
+var str = prompt("Insert string");
+console.log(newStr(str));
+
+
+function newStr(str){
+
+	return str.slice(1, str.length-1);
+
+}
 
 
 
