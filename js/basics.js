@@ -1131,7 +1131,7 @@ function division(num,div){
 
 
 
-*/
+
 
 // 57. Write a JavaScript program to create a new string of specified copies (positive number) 
 //     of a given string. 
@@ -1155,8 +1155,32 @@ function copyStr(str,num){
 }
 
 
+*/
 
 
+// 58. Write a JavaScript program to create a new string of 4 copies of the last 3 characters 
+//     of a given original string. The length of the given string must be 3 and above.
+
+
+
+
+var str = prompt("Insert string");
+console.log(newStr(str));
+
+
+function newStr(str){
+
+	last3Digits = str.substring(str.length-3, str.length);
+	newStr = "";
+
+	for ( var i = 0; i < 4; i++){
+		newStr += last3Digits;
+	}
+	
+	return str.length > 3 ? newStr : "Error! String needs to be longer."
+
+
+}
 
 
 
