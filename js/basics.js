@@ -1155,7 +1155,6 @@ function copyStr(str,num){
 }
 
 
-*/
 
 
 // 58. Write a JavaScript program to create a new string of 4 copies of the last 3 characters 
@@ -1183,7 +1182,21 @@ function newStr(str){
 }
 
 
+*/
 
+
+// 59. Write a JavaScript program to extract the first half of a string of even length. 
+
+var str = prompt("Insert string");
+console.log(halfStr(str));
+
+
+function halfStr(str){
+
+	str.length % 2 != 0 ? console.log("String length is NOT and even number cannot proceed.") : console.log("Loading...\n");
+	return str.slice(0, str.length/2);
+
+}
 
 
 
