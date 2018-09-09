@@ -1363,7 +1363,6 @@ function newStr(str, num){
 }
 
 
-*/
 
 
 
@@ -1383,6 +1382,31 @@ console.log(sumNumbers(numArr));
 function sumNumbers(numArr){
 
 	return "The sum is: " + (parseFloat(numArr[0]) + parseFloat(numArr[1]) + parseFloat(numArr[2]));
+}
+
+*/
+
+
+// 70. Write a JavaScript program to rotate the elements left of a given array of integers of length 3. 
+
+
+var num1 = prompt("Insert first number: ");
+var num2 = prompt("Insert second number: ");
+var num3 = prompt("Insert third number: ");
+var rotate = prompt("Insert number of left rotations: ");
+
+var numArr = [num1, num2, num3];
+console.log(rotateArr(numArr,rotate));
+
+
+function rotateArr(numArr,rot){
+
+	rot % 3 == 0 ? numArr : null;
+	rot % 2 == 0 ? numArr = [numArr[2],numArr[0],numArr[1]]: null;
+	(rot % 2 != 0 && rot % 3 != 0) ? numArr = [numArr[1],numArr[2],numArr[0]] : null;
+
+	return numArr;
+
 }
 
 
