@@ -1344,7 +1344,7 @@ function testStr(str){
 }
 
 
-*/
+
 
 // 68. Write a JavaScript program to create a new string using the first and last n characters from a given sting. 
 //     The string length must be greater or equal to n.
@@ -1363,6 +1363,27 @@ function newStr(str, num){
 }
 
 
+*/
+
+
+
+// 69. Write a JavaScript program to compute the sum of three elements of a 
+//     given array of integers of length 3.
+
+
+
+var num1 = prompt("Insert first number: ");
+var num2 = prompt("Insert second number: ");
+var num3 = prompt("Insert third number: ");
+
+var numArr = [num1, num2, num3];
+console.log(sumNumbers(numArr));
+
+
+function sumNumbers(numArr){
+
+	return "The sum is: " + (parseFloat(numArr[0]) + parseFloat(numArr[1]) + parseFloat(numArr[2]));
+}
 
 
 
