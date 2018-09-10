@@ -1408,7 +1408,7 @@ function rotateArr(numArr,rot){
 
 }
 
-*/
+
 
 // 71. Write a JavaScript program to check if 1 appears in first or last position of a given array of integers. 
 //     The array length must be greater or equal to 1. 
@@ -1420,16 +1420,34 @@ console.log(checkOnes(num));
 
 function checkOnes(num){
 
-	var numArr = Array.from({length: num}, () => Math.floor(Math.random() * 10));
+	var numArr = Array.from({length: num}, () => Math.floor(Math.random() * 10)); 
 
 	return (/^1/gi.test(numArr) || /1$/gi.test(numArr)) ? numArr +'\n'+ true : numArr +'\n'+ false; 
 }
 
 
+*/
+
+
+// 72. Write a JavaScript program to check if the first and last 
+//     elements are equal of a given array of integers length 3. 
 
 
 
+var num1 = prompt("First array value: ");
+var num2 = prompt("Second array value: ");
+var num3 = prompt("Third array value: ");
 
+var numArr = [num1, num2, num3];
+console.log(checkEqual(numArr));
+
+
+function checkEqual(arr){
+
+	return arr[0] == arr[2] ? true : false;
+
+
+}
 
 
 
