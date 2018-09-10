@@ -1384,7 +1384,6 @@ function sumNumbers(numArr){
 	return "The sum is: " + (parseFloat(numArr[0]) + parseFloat(numArr[1]) + parseFloat(numArr[2]));
 }
 
-*/
 
 
 // 70. Write a JavaScript program to rotate the elements left of a given array of integers of length 3. 
@@ -1409,10 +1408,22 @@ function rotateArr(numArr,rot){
 
 }
 
+*/
+
+// 71. Write a JavaScript program to check if 1 appears in first or last position of a given array of integers. 
+//     The array length must be greater or equal to 1. 
 
 
+var num = prompt("Length of the random array: ");
+console.log(checkOnes(num));
 
 
+function checkOnes(num){
+
+	var numArr = Array.from({length: num}, () => Math.floor(Math.random() * 10));
+
+	return (/^1/gi.test(numArr) || /1$/gi.test(numArr)) ? numArr +'\n'+ true : numArr +'\n'+ false; 
+}
 
 
 
