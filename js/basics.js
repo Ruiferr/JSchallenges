@@ -1426,7 +1426,6 @@ function checkOnes(num){
 }
 
 
-*/
 
 
 // 72. Write a JavaScript program to check if the first and last 
@@ -1445,9 +1444,28 @@ console.log(checkEqual(numArr));
 function checkEqual(arr){
 
 	return arr[0] == arr[2] ? true : false;
-
-
 }
+
+*/
+
+
+// 73. Write a JavaScript program to reverse the elements of a given array of integers length 3. 
+
+
+var num1 = prompt("First array value: ");
+var num2 = prompt("Second array value: ");
+var num3 = prompt("Third array value: ");
+
+var numArr = [num1, num2, num3];
+console.log(checkEqual(numArr));
+
+
+function checkEqual(arr){
+
+	return arr.reverse();
+}
+
+
 
 
 
