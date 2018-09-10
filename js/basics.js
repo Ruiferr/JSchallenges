@@ -1446,7 +1446,7 @@ function checkEqual(arr){
 	return arr[0] == arr[2] ? true : false;
 }
 
-*/
+
 
 
 // 73. Write a JavaScript program to reverse the elements of a given array of integers length 3. 
@@ -1464,6 +1464,57 @@ function checkEqual(arr){
 
 	return arr.reverse();
 }
+
+*/
+
+
+
+//  74. Write a JavaScript program to find the larger value between the first or last and set all 
+//      the other elements with that value. Display the new array. 
+
+
+var num = prompt("Length of the random array: ");
+maximizeArr(num);
+
+
+function maximizeArr(num){
+
+	var arr = Array.from({length: num}, () => Math.floor(Math.random() * 10)); 
+	console.log('Random generated array: '+arr+'\n');
+
+	arr[0] > arr[arr.length-1] ? arr.fill(arr[0]) : arr.fill(arr[arr.length-1]);
+	console.log('New maximized array: '+arr);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
