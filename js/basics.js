@@ -1465,7 +1465,7 @@ function checkEqual(arr){
 	return arr.reverse();
 }
 
-*/
+
 
 
 
@@ -1486,6 +1486,29 @@ function maximizeArr(num){
 	console.log('New maximized array: '+arr);
 
 }
+
+*/
+
+// 75. Write a JavaScript program to create a new array taking the middle elements of the two 
+//     arrays of integer and each length 3.
+
+
+
+newArr();
+
+
+function newArr(){
+
+	var arr = Array.from({length: 3}, () => Math.floor(Math.random() * 10)); 
+	var arr2 = Array.from({length: 3}, () => Math.floor(Math.random() * 10)); 
+	console.log('Random generated arrays: '+arr+' '+arr2+'\n');
+
+	var newarr = [arr[1], arr2[1]];
+	console.log('New array: '+newarr);
+
+}
+
+
 
 
 
