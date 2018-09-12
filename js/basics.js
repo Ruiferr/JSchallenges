@@ -1591,7 +1591,7 @@ function checkOneThree(num){
 
 } 
 
-*/
+
 
 //  80. Write a JavaScript program to swap the first and last elements of a given array of 
 //      integers. 
@@ -1611,14 +1611,25 @@ function swapArray(){
 	[randomArr[0], randomArr[randomArr.length - 1]] = [randomArr[randomArr.length - 1], randomArr[0]];
 
 	console.log(randomArr + "\n");
-
-
 } 
 
 
+*/
+
+// 81. Write a JavaScript program to add two digits of a given positive integer of length two. 
+
+
+var num = prompt("Insert you're number: ");
+console.log(addNumbers(num));
 
 
 
+ function addNumbers(num){
+
+ 	return parseInt(num[0]) + parseInt(num[1]);
+
+
+ }
 
 
 
