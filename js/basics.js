@@ -1614,7 +1614,6 @@ function swapArray(){
 } 
 
 
-*/
 
 // 81. Write a JavaScript program to add two digits of a given positive integer of length two. 
 
@@ -1630,6 +1629,39 @@ console.log(addNumbers(num));
 
 
  }
+
+
+ */
+
+ // 82. Write a JavaScript to add two positive integers without carry.
+
+var num1 = prompt("Insert first number: ");
+var num2 = prompt("Insert second number: ");
+
+console.log(addNumbers(num1, num2));
+
+
+function addNumbers(num1, num2){
+
+	final_val = "";
+	num1.length > num2.length ? max_length = num1.length : max_length = num2.length;
+
+
+	for(var i = 0; i < max_length; i++){
+
+		num1[i] == null ? num1 += '0' : null;
+		num2[i] == null ? num2 += '0' : null;
+
+		var add = parseInt(num1[i]) + parseInt(num2[i]);
+
+		add >= 10 ? final_val += Math.floor((add / 10) % 10) : final_val += add;
+	}
+
+		return final_val;
+
+}
+
+
 
 
 
