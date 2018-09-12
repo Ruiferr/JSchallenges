@@ -1508,7 +1508,7 @@ function newArr(){
 
 }
 
-*/
+
 
 
 
@@ -1529,6 +1529,22 @@ function createArr(num){
 
 }
 
+
+*/
+
+
+//  77. Write a JavaScript program to test if an array of integers of length 2 contains 1 or a 3.
+
+
+var randomArr = Array.from({length: 2}, () => Math.floor(Math.random() * 10));
+console.log(randomArr + '\n');
+console.log(checkOneThree());
+
+
+function checkOneThree(){
+
+	return /[13]/g.test(randomArr) ? true : false;
+} 
 
 
 
