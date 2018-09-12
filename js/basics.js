@@ -1487,7 +1487,7 @@ function maximizeArr(num){
 
 }
 
-*/
+
 
 // 75. Write a JavaScript program to create a new array taking the middle elements of the two 
 //     arrays of integer and each length 3.
@@ -1508,9 +1508,26 @@ function newArr(){
 
 }
 
+*/
 
 
 
+//  76. Write a JavaScript program to create a new array taking the first and last elements from a given 
+//      array of integers and length must be greater or equal to 1. 
+
+
+
+var num = prompt("Length of the random array: ");
+
+console.log(createArr(num));
+
+
+function createArr(num){
+
+	num > 1 ? randomArr = Array.from({length: num}, () => Math.floor(Math.random() * 10)) : console.log("Array length too small!");
+	return "Array generated: " +randomArr + "\n" + "New array: " + [randomArr[0], randomArr[randomArr.length-1]];
+
+}
 
 
 
