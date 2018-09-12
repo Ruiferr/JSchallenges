@@ -1546,8 +1546,6 @@ function checkOneThree(randomArr){
 } 
 
 
-*/
-
 
 
 // 78. Write a JavaScript program to test if an array of integers of length 2 does not contain 1 or a 3. 
@@ -1562,6 +1560,36 @@ console.log(checkOneThree(randomArr));
 function checkOneThree(arr){
 
 	return (arr.indexOf(1) == -1 && arr.indexOf(3) == -1) ? true : false;
+} 
+
+
+*/
+
+
+// 79. Write a JavaScript program to test if a given array of integers contains 30 and 40 twice. 
+//    
+
+
+var num = prompt("Length of the random array: ");
+
+console.log(checkOneThree(num));
+
+
+function checkOneThree(num){
+
+	var randomArr = Array.from({length: num}, () => Math.floor(Math.random() * 40));
+	var count_30 = 0;
+	var count_40 = 0;
+
+	for (var i = 0; i < randomArr.length; i++){
+		randomArr[i] == 30 ? count_30 ++ : null;
+		randomArr[i] == 40 ? count_40 ++ : null;
+	}
+
+	console.log(randomArr + "\n");
+	console.log("Duplicated 30: " + count_30 + "\n"+ "Duplicated 40: " + count_30 + "\n");
+	return (count_30 >=2 || count_40 >= 2) ? true : false;
+
 } 
 
 
