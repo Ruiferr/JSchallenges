@@ -1563,7 +1563,6 @@ function checkOneThree(arr){
 } 
 
 
-*/
 
 
 // 79. Write a JavaScript program to test if a given array of integers contains 30 and 40 twice. 
@@ -1592,9 +1591,29 @@ function checkOneThree(num){
 
 } 
 
+*/
+
+//  80. Write a JavaScript program to swap the first and last elements of a given array of 
+//      integers. 
 
 
 
+
+
+swapArray();
+
+
+function swapArray(){
+
+	var randomArr = Array.from({length: 5}, () => Math.floor(Math.random() * 10));
+	console.log(randomArr + "\n");
+
+	[randomArr[0], randomArr[randomArr.length - 1]] = [randomArr[randomArr.length - 1], randomArr[0]];
+
+	console.log(randomArr + "\n");
+
+
+} 
 
 
 
