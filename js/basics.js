@@ -1631,7 +1631,7 @@ console.log(addNumbers(num));
  }
 
 
- */
+ 
 
  // 82. Write a JavaScript to add two positive integers without carry.
 
@@ -1660,6 +1660,41 @@ function addNumbers(num1, num2){
 		return final_val;
 
 }
+
+
+*/
+
+
+//  83. Write a JavaScript to find the longest string from an given array of strings.
+
+(function longestString(){
+
+
+	var array = ['djshd', 'adskjdajsgdg', 'kjkgkhn', 'jhg', 'jdfjkfd', 'dfb', '87uji98uhjiujkuyh'];
+	var val = "";
+
+	for (var i = 0; i < array.length; i++) {
+		val.length < array[i].length ? val = array[i] : null;
+	}
+
+	console.log('Longest string: '+ val);
+
+
+})(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
