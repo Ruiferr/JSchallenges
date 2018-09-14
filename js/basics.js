@@ -1662,8 +1662,6 @@ function addNumbers(num1, num2){
 }
 
 
-*/
-
 
 //  83. Write a JavaScript to find the longest string from an given array of strings.
 
@@ -1683,6 +1681,30 @@ function addNumbers(num1, num2){
 })(); 
 
 
+*/ 
+
+//  84. Write a JavaScript to replace each character of a given string by the next one in the English alphabet. 
+
+
+(function longestString(){
+
+	var string = prompt("Insert string: ");
+	var abc = 'abcdefghijklmnopqrstuvwxyz';
+	var newString = '';
+
+	for (var i = 0; i < string.length; i++) {
+		for (var j = 0; j < abc.length; j++) {
+			
+			string[i] == abc[j] ? newString += abc[j+1] : null;
+
+		}
+		
+	}
+
+	console.log('String: '+ string + '\n' + 'Generated string: ' + newString);
+
+
+})(); 
 
 
 
