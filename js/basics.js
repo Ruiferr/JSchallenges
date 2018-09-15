@@ -1801,7 +1801,6 @@ function addNumbers(num1, num2){
 })();
 
 
-*/
 
 
 //  89. Write a JavaScript program to check whether it is possible to replace $ in a given 
@@ -1819,7 +1818,22 @@ function addNumbers(num1, num2){
 })();
 
 
+*/
 
+
+// 90. Write a JavaScript program to find the kth greatest element of a given array of integers 
+
+
+(function similarArrays(){
+
+	var arr = [20,10,25,345,35,67,89,134];
+	var k = prompt("The 'k'th biggest number: ");
+	console.log('Array: '+ arr+ '\n');
+
+	arr.sort(function(a, b){return a-b});
+	console.log('Biggest '+ k +'th number: '+arr[k-1]);
+
+})();
 
 
 
