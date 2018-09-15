@@ -1740,7 +1740,7 @@ function addNumbers(num1, num2){
 })();
 
 
-*/
+// 86. Write a JavaScript program to find the types of a given angle. 
 
 
 
@@ -1761,8 +1761,28 @@ function addNumbers(num1, num2){
 })();
 
 
+*/
+
+// 87. Write a JavaScript program to check whether two arrays of integers of same length are similar or not. 
+//     The arrays will be similar if one array can be obtained from another array by swapping at most one 
+//      pair of elements. 
 
 
+
+(function similarArrays(){
+
+	var arr1 = [10,20,30,40];
+	var arr2 = [10,30,20,40];
+	var similar = 0;
+
+	for (var i = 0; i < arr1.length; i++) {
+		arr1[i] != arr2[i] ? similar++ : null; 
+
+	}
+
+	console.log(similar > 2 ? false : true);
+
+})();
 
 
 
