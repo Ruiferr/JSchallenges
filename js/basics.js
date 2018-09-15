@@ -1761,7 +1761,6 @@ function addNumbers(num1, num2){
 })();
 
 
-*/
 
 // 87. Write a JavaScript program to check whether two arrays of integers of same length are similar or not. 
 //     The arrays will be similar if one array can be obtained from another array by swapping at most one 
@@ -1786,7 +1785,23 @@ function addNumbers(num1, num2){
 
 
 
+*/
 
+
+// 88. Write a JavaScript program to check whether two given integers are similar or not, 
+//     if a given divisor divides both integers and it does not divide either.
+
+
+(function similarArrays(){
+
+	var num1 = prompt("Insert first number: ");
+	var num2 = prompt("Insert second number: ");
+	var divisor = prompt("Insert the divisor: ");
+
+	console.log((num1 % divisor == 0 && num2 % divisor == 0 || num1 % divisor != 0 && num2 % divisor != 0) ? true : false)
+
+
+})();
 
 
 
