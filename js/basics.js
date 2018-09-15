@@ -1705,7 +1705,6 @@ function addNumbers(num1, num2){
 
 })(); 
 
-*/
 
 // 85. Write a JavaScript code to divide an given array of positive integers into two 
 //     parts. First element goes to first part, second element goes to second part, and third 
@@ -1741,9 +1740,25 @@ function addNumbers(num1, num2){
 })();
 
 
+*/
 
 
 
+(function angle(){
+
+	var angle = prompt("Insert angle: ");
+
+	 if(angle < 90) {
+	    return "Acute angle.";
+	  }else if(angle === 90) {
+	    return "Right angle.";
+	  }else if(angle < 180) {
+	    return "Obtuse angle.";
+	  }else{
+	  	return "Straight angle.";
+	  }
+
+})();
 
 
 
