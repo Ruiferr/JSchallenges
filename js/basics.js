@@ -1785,9 +1785,6 @@ function addNumbers(num1, num2){
 
 
 
-*/
-
-
 // 88. Write a JavaScript program to check whether two given integers are similar or not, 
 //     if a given divisor divides both integers and it does not divide either.
 
@@ -1802,6 +1799,59 @@ function addNumbers(num1, num2){
 
 
 })();
+
+
+*/
+
+
+//  89. Write a JavaScript program to check whether it is possible to replace $ in a given 
+//      expression x $ y = z with one of the four signs +, -, * or / to obtain a correct expression.
+
+
+ (function similarArrays(){
+
+	var x = parseFloat(prompt("Insert first number: "));
+	var y = parseFloat(prompt("Insert second number: "));
+	var z = parseFloat(prompt("Result: "));
+
+	console.log( x + y == z || x * y == z || x / y == z || x - y == z );
+
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
