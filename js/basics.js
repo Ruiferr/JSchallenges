@@ -1681,7 +1681,6 @@ function addNumbers(num1, num2){
 })(); 
 
 
-*/ 
 
 //  84. Write a JavaScript to replace each character of a given string by the next one in the English alphabet. 
 
@@ -1706,13 +1705,40 @@ function addNumbers(num1, num2){
 
 })(); 
 
+*/
+
+// 85. Write a JavaScript code to divide an given array of positive integers into two 
+//     parts. First element goes to first part, second element goes to second part, and third 
+//     element goes to first part and so on. Now compute the sum of two parts and store into an 
+//     array of size two.
 
 
 
+(function arraySum(){
+
+	var arrLen = prompt("Array length: ");
+	var userArr = [];
+	var sumArr = [0,0];
+
+	while(arrLen--){
+		var val = prompt("Insert value: ");
+		userArr.push(val);
+	}
 
 
 
+	for(var i = 0; i < userArr.length; i++){
 
+		(i % 2 == 0) ? sumArr[0] =  parseInt(userArr[i]) + parseInt(sumArr[0]) : sumArr[1] = parseInt(userArr[i]) + parseInt(sumArr[1]);
+
+	}
+
+
+
+	console.log('Final array: ' + sumArr);
+
+
+})();
 
 
 
