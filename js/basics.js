@@ -1789,7 +1789,7 @@ function addNumbers(num1, num2){
 //     if a given divisor divides both integers and it does not divide either.
 
 
-(function similarArrays(){
+(function similarInt(){
 
 	var num1 = prompt("Insert first number: ");
 	var num2 = prompt("Insert second number: ");
@@ -1807,7 +1807,7 @@ function addNumbers(num1, num2){
 //      expression x $ y = z with one of the four signs +, -, * or / to obtain a correct expression.
 
 
- (function similarArrays(){
+ (function checkExpression(){
 
 	var x = parseFloat(prompt("Insert first number: "));
 	var y = parseFloat(prompt("Insert second number: "));
@@ -1818,13 +1818,12 @@ function addNumbers(num1, num2){
 })();
 
 
-*/
 
 
 // 90. Write a JavaScript program to find the kth greatest element of a given array of integers 
 
 
-(function similarArrays(){
+(function biggestNum(){
 
 	var arr = [20,10,25,345,35,67,89,134];
 	var k = prompt("The 'k'th biggest number: ");
@@ -1835,6 +1834,44 @@ function addNumbers(num1, num2){
 
 })();
 
+
+*/
+
+
+//  91. Write a JavaScript program to find the maximum possible sum of some of its k consecutive numbers 
+//      (numbers that follow each other in order.) of a given array of positive integers.
+
+
+(function maxConsecutive(){
+
+	var arr = [20,10,25,345,35,67,89,134];
+	var k = parseInt(prompt("The 'k'th consecutive biggest number: "));
+	var max = 0;
+	var val = 0;
+	var j = k;
+	console.log('Array: '+ arr+ '\n');
+
+
+
+	for (var i = 0; i < arr.length; i++) {
+
+		if (k == 1) {return console.log(Math.max(...arr));} 
+		if (k <= 0 || !Number.isInteger(k) || k > arr.length) {return console.log("Error insert a valid number!");} 
+
+	 	val += arr[i];
+	 	j--;
+
+	 	if (j == 0) {
+	 		val > max ? max = val : null;
+	 		j = k-1;
+	 		val = arr[i];
+	 	}
+	}
+
+
+	console.log('Biggest sum of the '+ k +' consecutive numbers: '+ max);
+
+})();
 
 
 
